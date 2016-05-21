@@ -2,7 +2,6 @@
   "name": "gen-i18n",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +12,9 @@
   "author": "Sean Connolly",
   "license": "ISC",
   "preferGlobal": true,
+  "bin": {
+    "geni18n": "index.js"
+  }
   "bugs": {
     "url": "https://github.com/sconno05/gen-i18n/issues"
   },
