@@ -1,0 +1,19 @@
+{
+  "name": "gen-i18n",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gen-i18n.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sconno05/gen-i18n.git"
+  },
+  "author": "Sean Connolly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sconno05/gen-i18n/issues"
+  },
+  "homepage": "https://github.com/sconno05/gen-i18n#readme"
+}
