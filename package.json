@@ -2,7 +2,7 @@
   "name": "gen-i18n",
   "version": "1.0.0",
   "description": "",
-  "main": "gen-i18n.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/sconno05/gen-i18n/issues"
   },
-  "homepage": "https://github.com/sconno05/gen-i18n#readme",
-  "dependencies": {
-    "slug": "^0.9.1"
-  }
+  "homepage": "https://github.com/sconno05/gen-i18n#readme"
 }
