@@ -12,6 +12,7 @@
   },
   "author": "Sean Connolly",
   "license": "ISC",
+  "preferGlobal": true,
   "bugs": {
     "url": "https://github.com/sconno05/gen-i18n/issues"
   },
