@@ -13,13 +13,15 @@
   "license": "ISC",
   "preferGlobal": true,
   "bin": {
-    "geni18n": "index.js"
+    "geni18n": "gen.js",
+    "replacei18n": "replace.js"
   },
   "bugs": {
     "url": "https://github.com/sconno05/gen-i18n/issues"
   },
   "homepage": "https://github.com/sconno05/gen-i18n#readme",
   "dependencies": {
+    "replace": "^0.3.0",
     "slug": "^0.9.1"
   }
 }

@@ -15,7 +15,7 @@ console.log("Generating keys for " + strings.length + " strings");
 
 var keyedStrings = strings.map(function(line) {
   var obj = {};
-  obj[slug(line, {lower: true, replacement: '_'}).substring(0, 25)] = line;
+  obj[slug(line, {lower: true, replacement: '_'}).substring(0, 100)] = line;
   return obj;
 });
 

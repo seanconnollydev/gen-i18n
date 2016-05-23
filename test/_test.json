@@ -1,0 +1,14 @@
+[
+  {
+    "word": "Word"
+  },
+  {
+    "i_am_a_phrase": "I am a phrase"
+  },
+  {
+    "i_am_a_full_sentence_with": "I am a full sentence, with commas and a period."
+  },
+  {
+    "and_i_am_a_looooooooooooo": "And I am a loooooooooooooooooong string that should exceed the max key count"
+  }
+]
