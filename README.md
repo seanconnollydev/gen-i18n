@@ -1,6 +1,8 @@
 # gen-i18n
 
-Salve the pain of generating translation resource files and transforming hard coded application text into translation keys
+Salve the pain of generating translation resource files and transforming hard coded application text into translation keys.
+
+Note this project is meant for one-time use to localize an existing application, not for ongoing key generation.  It may be more useful as an example script if you need heavy customization.
 
 ## Installation
 
