@@ -3,5 +3,6 @@
   "i_am_a_phrase": "I am a phrase",
   "i_am_a_full_sentence_with_commas_and_a_period": "I am a full sentence, with commas and a period.",
   "and_i_am_a_loooooooooooooooooong_string_that_should_exceed_the_max_key_count": "And I am a loooooooooooooooooong string that should exceed the max key count",
-  "another_day_another_string": "Another day, another string"
+  "another_day_another_string": "Another day, another string",
+  "i_am_a_phrase_with_spaces": "I am a phrase with spaces"
 }
