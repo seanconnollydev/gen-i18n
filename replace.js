@@ -24,7 +24,7 @@ glob(inputGlob, {}, function(er, files) {
         */
         contents = contents.replace(
           new RegExp("(<.+>\\s*)" + keyedStrings[key] + "(\\s*<\/.+>)"),
-          "$1{{'" + key + "' | translate}}$2");
+          "$1{{ '" + key + "' | translate }}$2");
       });
 
       fs.writeFile(file, contents, function() {
