@@ -20,4 +20,4 @@ Note: JSON is the only extension currently supported.
 
 Replaces hard coded strings in application files with translation keys.
 
-`replacei18n 'path/to/keys.json' '*.html'`
+`replacei18n 'path/to/keys.json' '**/*.html'`
