@@ -9,11 +9,11 @@ var targetPath = args[1];
 
 console.log("Key file: " + keyFile);
 
-var keys = JSON.parse(fs.readFileSync(keyFile, 'utf8'));
+var keyedStrings = JSON.parse(fs.readFileSync(keyFile, 'utf8'));
+var keys = Object.keys(keyedStrings);
 
-keys.forEach(function(kvp) {
-  var key = Object.keys(kvp);
-  var str = kvp[key];
+keys.forEach(function(key) {
+  var str = keyedStrings[key];
   
   /*
     <p>Some text</p>
