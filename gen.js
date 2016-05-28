@@ -45,15 +45,16 @@ function _formatJson(keyedStrings) {
 
 function _formatiOSStrings(keyedStrings) {
   var keys = Object.keys(keyedStrings);
+
   return keys.reduce(function(prev, curr, i) {
     if (i === 1) {
       prev = _formatLine(prev, keyedStrings[prev]);
     }
-    // return prev + '\n' + _formatLine(curr, keyedStrings[curr]);
+
     return `${prev}\n${_formatLine(curr, keyedStrings[curr])}`;
   });
 
   function _formatLine(key, val) {
-    return `"${key}": "${val}"`;
+    return `"${key}" = "${val}"`;
   }
 }
