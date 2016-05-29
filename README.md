@@ -14,7 +14,11 @@ Generates a key file from a flat `.txt` file of application strings.
 
 `geni18n 'path/to/source.txt' 'path/to/destination.json'`
 
-Note: JSON is the only extension currently supported.
+Note: Supports JSON and iOS strings files
+
+By default, the destination file will be replaced.  Use the *append* option to add to an existing file.
+
+`geni18n 'path/to/source.txt' 'path/to/destination.json' --append`
 
 ## replacei18n
 
