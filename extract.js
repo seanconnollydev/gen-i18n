@@ -8,7 +8,7 @@ var inputGlob = argv._[0];
 var destinationFile = argv._[1];
 
 var htmlTextRegex = /<.+>(.+)<\/.+>/g; // <h3>Word</h3>
-var iconRegex = /<i.*|md-icon.*>(.+)<\/i.*|md-icon.*>/g; //but not <i class="material-icons">check</i> or <md-icon class="material-icons">check</md-icon>
+var iconRegex = /<i.*|md-icon.*>(.+)<\/i.*|md-icon.*>/; //but not <i class="material-icons">check</i> or <md-icon class="material-icons">check</md-icon>
 var angularFilterRegex = /{{.+}}/; // {{angularMessage}}, {{ 'word' | translate }}
 var strings = [];
 
