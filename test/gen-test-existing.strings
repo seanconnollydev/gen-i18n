@@ -1,0 +1,9 @@
+// MARK: General
+
+"CancelActionTitle" = "Cancel";
+"YesActionTitle" = "Yes";
+"OKActionTitle" = "OK";
+"DeleteActionTitle" = "Delete";
+"Error" = "Error";
+"Warning" = "Warning";
+"Later" = "Later";

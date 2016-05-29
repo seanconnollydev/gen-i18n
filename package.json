@@ -23,6 +23,7 @@
   "homepage": "https://github.com/sconno05/gen-i18n#readme",
   "dependencies": {
     "glob": "^7.0.3",
+    "i18n-strings-files": "^1.0.2",
     "slug": "^0.9.1",
     "yargs": "^4.7.1"
   }
