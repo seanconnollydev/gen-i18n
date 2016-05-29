@@ -8,7 +8,8 @@ var inputGlob = argv._[0];
 var destinationFile = argv._[1];
 
 var htmlTextRegex = /<.+>(.+)<\/.+>/g; // <h3>Word</h3>
-var angularFilterRegex = /{{\s*'.+'\s*\|\s*translate\s*}}/; // {{ 'word' | translate }}
+var iconRegex = /<i.*>(.+)<\/i>/g; //but not <i class="material-icons">check</i>
+var angularFilterRegex = /{{.+}}/; // {{angularMessage}}, {{ 'word' | translate }}
 var strings = [];
 
 glob(inputGlob, {}, function(er, files) {
@@ -17,7 +18,7 @@ glob(inputGlob, {}, function(er, files) {
     var contents = fs.readFileSync(file, 'utf8');
     var match = htmlTextRegex.exec(contents);
     while (match != null) {
-      if(!angularFilterRegex.test(match[1])) {
+      if(!iconRegex.test(match[0]) && !angularFilterRegex.test(match[1])) {
         strings.push(match[1]);  
       }
       match = htmlTextRegex.exec(contents);
