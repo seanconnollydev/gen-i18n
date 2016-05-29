@@ -2,10 +2,10 @@
 
 var fs = require('fs');
 var slug = require('slug');
+var argv = require('yargs').argv;
 
-var args = process.argv.slice(2);
-var sourceFile = args[0];
-var destinationFile = args[1];
+var sourceFile = argv._[0];
+var destinationFile = argv._[1];
 var destinationFileFormat = destinationFile.substring(destinationFile.lastIndexOf('.') + 1);
 
 console.log("Reading from " + sourceFile);
