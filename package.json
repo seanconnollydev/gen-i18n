@@ -14,7 +14,8 @@
   "preferGlobal": true,
   "bin": {
     "geni18n": "gen.js",
-    "replacei18n": "replace.js"
+    "replacei18n": "replace.js",
+    "extracti18n": "extract.js"
   },
   "bugs": {
     "url": "https://github.com/sconno05/gen-i18n/issues"

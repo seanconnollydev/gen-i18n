@@ -21,3 +21,9 @@ Note: JSON is the only extension currently supported.
 Replaces hard coded strings in application files with translation keys.
 
 `replacei18n 'path/to/keys.json' '**/*.html'`
+
+## extracti18n
+
+Extracts hard coded strings to a flat .txt file. Useful for identifying strings that are not referenced as keys yet.
+
+`extracti18n '**/*.html' 'path/to/destination.txt'`
