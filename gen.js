@@ -4,6 +4,7 @@ var fs = require('fs');
 var slug = require('slug');
 var argv = require('yargs').argv;
 var i18nStringsFiles = require('i18n-strings-files');
+var yaml = require('yamljs');
 
 var sourceFile = argv._[0];
 var destinationFile = argv._[1];
@@ -52,6 +53,9 @@ function _formatKeys(keyedStrings) {
     case 'strings':
       return _formatiOSStrings(keyedStrings);
       break;
+    case 'yml':
+      return _formatYaml(keyedStrings);
+      break;
     default:
       throw new Error("Unrecognized destination file format: " + destinationFileFormat);
   }
@@ -76,6 +80,10 @@ function _formatiOSStrings(keyedStrings) {
   function _formatLine(key, val) {
     return `"${key}" = "${val}";`;
   }
+}
+
+function _formatYaml(keyedStrings) {
+  return yaml.stringify(keyedStrings, 4);
 }
 
 function _readStrings(destinationFile) {
