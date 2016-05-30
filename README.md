@@ -14,7 +14,7 @@ Generates a key file from a flat `.txt` file of application strings.
 
 `geni18n 'path/to/source.txt' 'path/to/destination.json'`
 
-Note: Supports JSON and iOS strings files
+Note: Supports JSON, YAML and iOS strings files
 
 By default, the destination file will be replaced.  Use the *append* option to add to an existing file.
 
