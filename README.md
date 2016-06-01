@@ -26,6 +26,14 @@ Replaces hard coded strings in application files with translation keys.
 
 `replacei18n 'path/to/keys.json' '**/*.html'`
 
+## crushi18n
+
+Replaces strings in a key file with a new string
+
+`crushi18n 'path/to/keys.json' 'path/to/crushed.json'`
+
+By default, strings are replaced with the `_` character.  Pass `--with=X` to replace with any string.
+
 ## extracti18n
 
 Extracts hard coded strings to a flat .txt file. Useful for identifying strings that are not referenced as keys yet.
