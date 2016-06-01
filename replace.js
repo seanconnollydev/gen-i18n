@@ -21,7 +21,7 @@ glob(inputGlob, {}, function(er, files) {
         <h5> Remember leading and trailing spaces </h5>
       */
       contents = contents.replace(
-          new RegExp("(<.+>\\s*)" + keyedStrings[key] + "(\\s*<\/.+>)"),
+          new RegExp("(<.+>\\s*)" + keyedStrings[key] + "(\\s*<\/.+>)", "g"),
           "$1{{ '" + key + "' | translate }}$2");
     });
 
