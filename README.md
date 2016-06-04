@@ -1,8 +1,6 @@
 # gen-i18n
 
-Salve the pain of generating translation resource files and transforming hard coded application text into translation keys.
-
-Note this project is meant for one-time use to localize an existing application, not for ongoing key generation.  It may be more useful as an example script if you need heavy customization.
+A set of utility functions to assist with creating and maintaining resource keys and files in a multi-language application.
 
 ## Installation
 
@@ -12,25 +10,27 @@ Note this project is meant for one-time use to localize an existing application,
 
 Generates a key file from a flat `.txt` file of application strings.
 
-`geni18n 'path/to/source.txt' 'path/to/destination.json'`
+`geni18n --src=path/to/source.txt --dest=path/to/destination.json`
 
-Note: Supports JSON, YAML and iOS strings files
+Supports JSON, YAML and iOS strings files
 
 By default, the destination file will be replaced.  Use the *append* option to add to an existing file.
 
 `geni18n 'path/to/source.txt' 'path/to/destination.json' --append`
 
-## replacei18n
+Note: this function is meant for one-time use to localize an existing application, not for ongoing key generation.  It may be more useful as an example script if you need heavy customization.
+
+## replace
 
 Replaces hard coded strings in application files with translation keys.
 
-`replacei18n 'path/to/keys.json' '**/*.html'`
+`geni18n replace --keys=path/to/keys.json --path='**/*.html'`
 
-## crushi18n
+## crush
 
 Replaces strings in a key file with a new string
 
-`crushi18n 'path/to/keys.json' 'path/to/crushed.json'`
+`geni18n crush --keys=path/to/keys.json --dest=path/to/crushed_keys.json`
 
 By default, strings are replaced with the `_` character.  Pass `--with=X` to replace with any string.
 
@@ -38,4 +38,4 @@ By default, strings are replaced with the `_` character.  Pass `--with=X` to rep
 
 Extracts hard coded strings to a flat .txt file. Useful for identifying strings that are not referenced as keys yet.
 
-`extracti18n '**/*.html' 'path/to/destination.txt'`
+`geni18n extract --path='**/*.html' dest=path/to/destination.txt`

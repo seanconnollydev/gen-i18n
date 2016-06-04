@@ -1,7 +1,8 @@
 {
   "name": "gen-i18n",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +14,7 @@
   "license": "ISC",
   "preferGlobal": true,
   "bin": {
-    "geni18n": "gen.js",
-    "replacei18n": "replace.js",
-    "extracti18n": "extract.js",
-    "crushi18n": "crush.js"
+    "geni18n": "./bin/geni18n.js"
   },
   "bugs": {
     "url": "https://github.com/sconno05/gen-i18n/issues"

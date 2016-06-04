@@ -1,0 +1,4 @@
+I am a full sentence, with commas and a period.
+Word
+ I am a phrase with spaces 
+I am a phrase
