@@ -34,7 +34,7 @@ Replaces strings in a key file with a new string
 
 By default, strings are replaced with the `_` character.  Pass `--with=X` to replace with any string.
 
-## extracti18n
+## extract
 
 Extracts hard coded strings to a flat .txt file. Useful for identifying strings that are not referenced as keys yet.
 
