@@ -17,7 +17,8 @@ module.exports = function(options) {
         
         contents = contents.replace(
             new RegExp("(<.+>\\s*)" + keyedStrings[key] + "(\\s*<\/.+>)", "g"),
-            "$1{{ '" + key + "' | translate }}$2");
+            "$1<span translate>" + key + "</span>$2");
+            // "$1{{ '" + key + "' | translate }}$2");
       });
 
       fs.writeFileSync(file, contents);
