@@ -39,3 +39,9 @@ By default, strings are replaced with the `_` character.  Pass `--with=X` to rep
 Extracts hard coded strings to a flat .txt file. Useful for identifying strings that are not referenced as keys yet.
 
 `geni18n extract --path='**/*.html' dest=path/to/destination.txt`
+
+## prune
+
+Removes keys from a key file that are not in use
+
+`geni18n prune --keys=path/to/keys.json --path='**/*.html'`
