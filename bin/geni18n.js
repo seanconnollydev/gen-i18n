@@ -14,6 +14,8 @@ switch(command) {
     break;
   case 'extract':
     _extract();
+  case 'prune':
+    _prune();
     break;
   default:
     throw Error("Unrecognized command: " + command);
@@ -37,4 +39,9 @@ function _replace() {
 function _extract() {
   var extract = require('../src/extract');
   extract(argv);
+}
+
+function _prune() {
+  var prune = require('../src/prune');
+  prune(argv);
 }
