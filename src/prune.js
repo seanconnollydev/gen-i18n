@@ -22,13 +22,17 @@ module.exports = function(options) {
       }
     });
 
-    var newKeys = {};
+    var newKeys = {}, count = 0;
     for (var key in originalKeys) {
       if(used[key]) {
         newKeys[key] = originalKeys[key];
+      } else {
+        console.log("Removing " + key);
+        count++;
       }
     }
 
+    console.log("Removed ".concat(count).concat(" keys"));
     fs.writeFileSync(keyFile, JSON.stringify(newKeys, null, 2), 'utf8');
     console.log("Written to " + keyFile);
   });
